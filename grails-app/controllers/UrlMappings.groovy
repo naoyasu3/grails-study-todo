@@ -1,4 +1,4 @@
-package todo
+
 
 class UrlMappings {
 
@@ -9,7 +9,7 @@ class UrlMappings {
             }
         }
 
-        "/"(view:"/index")
+        "/"(controller: "todo")
         "500"(view:'/error')
         "404"(view:'/notFound')
     }

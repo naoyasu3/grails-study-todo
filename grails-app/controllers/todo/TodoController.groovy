@@ -10,13 +10,14 @@ class TodoController {
         [todos: Todo.list()]
     }
 
-    def save(Todo tode){
+    def save(Todo todo){
         if (todo.hasErrors()) {
             render view: 'index', model: [todo: todo, todos: Todo.list()]
             return
         }
 
         todo.save(flush: true)
+
         redirect action: 'index'
     }
 

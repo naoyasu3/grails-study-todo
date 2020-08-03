@@ -11,5 +11,6 @@
 *= require grails
 *= require main
 *= require mobile
+*= require webjars/bootstrap/3.3.5/dist/css/bootstrap
 *= require_self
 */
